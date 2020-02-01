@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AndroidPlayground</string>
-    <string name="message_text">...</string>
-    <string name="button_text">Change!</string>
+    <string name="app_name">Android Playground</string>
+    <string name="result_text">...</string>
+    <string name="button_text">あなたの運勢は？</string>
 </resources>
