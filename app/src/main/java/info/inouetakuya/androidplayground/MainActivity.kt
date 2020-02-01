@@ -2,7 +2,7 @@ package info.inouetakuya.androidplayground
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -10,9 +10,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-    }
 
-    fun changeTextView(view: View) {
-        resultTextView.text = "Hello there! again!"
+        getOmikujiButton.setOnClickListener {
+            Log.v("MainActivity", "Button clicked")
+        }
     }
 }
