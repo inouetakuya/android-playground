@@ -13,6 +13,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun changeTextView(view: View) {
-        messageTextView.text = "Hello there! again!"
+        resultTextView.text = "Hello there! again!"
     }
 }
