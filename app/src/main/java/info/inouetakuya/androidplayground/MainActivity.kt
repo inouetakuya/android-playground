@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,6 +14,8 @@ class MainActivity : AppCompatActivity() {
 
         getOmikujiButton.setOnClickListener {
             Log.v("MainActivity", "Button clicked")
+            val n = Random.nextInt(3)
+            resultTextView.text = n.toString()
         }
     }
 }
