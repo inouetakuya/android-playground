@@ -14,8 +14,9 @@ class MainActivity : AppCompatActivity() {
 
         getOmikujiButton.setOnClickListener {
             Log.v("MainActivity", "Button clicked")
-            val n = Random.nextInt(3)
-            resultTextView.text = n.toString()
+            val results = arrayOf("大吉", "中吉", "吉", "小吉", "凶")
+            val n = Random.nextInt(results.count())
+            resultTextView.text = results[n]
         }
     }
 }
